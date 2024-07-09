@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -35,4 +36,71 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.news-card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.news-card .card-body {
+  padding: 15px;
+}
+
+.news-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.news-card .card-text {
+  font-size: 0.95rem;
+  margin: 10px 0;
+}
+
+.news-card .btn-outline-dark {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.news-card .btn-outline-dark:hover {
+  background-color: #343a40;
+  color: white;
+}
+
+.news-card .badge {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+
+.navbar {
+  background: linear-gradient(145deg, #0d0d0d, #1a1a1a);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  width: 30px;
+}
+
+.nav-link {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f8f9fa;
+  background-color: #343a40;
+  border-radius: 4px;
+}
+
+.nav-link.active {
+  color: #ffc107;
+  background-color: #343a40;
+  border-radius: 4px;
+  font-weight: bold;
 }
